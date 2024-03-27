@@ -74,7 +74,7 @@ void runOnce(int percentage) {
   Serial.println("LAUNCHING T-BALL");
   set_motor_p(act_1, percentage);
 
-  // since there is bias with using timing (no encoder present), as a randomness to the timing to compensate for drift
+  // since there is bias with using timing (no encoder present), add a randomness to the timing to compensate for drift
   long RandVal = random(700, 703);
   Serial.println(RandVal);
   delay(RandVal);
